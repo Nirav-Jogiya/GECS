@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+@mixin border-radius($property) {
+  -webkit-border-radius: $property;
+  -ms-border-radius: $property;
+  border-radius: $property;
+}
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+}
+
+$gradient: transparent linear-gradient(216deg, #7467F0 0%, #2896E9 100%) 0% 0% no-repeat padding-box;

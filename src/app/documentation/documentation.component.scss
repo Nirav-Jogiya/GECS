@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.economic_overview {
+  .row1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    .left_line {
+      padding-left: 40px;
+      margin-right: 20px;
+      background: $gradient;
+    }
+
+    .right_content {}
+  }
+}
