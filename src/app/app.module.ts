@@ -9,6 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { VotingDashboardComponent } from './voting-dashboard/voting-dashboard.component';
 import { ValuesRankingComponent } from './values-ranking/values-ranking.component';
 import { GiveRankingComponent } from './give-ranking/give-ranking.component';
+import { ProposalsComponent } from './proposals/proposals.component';
+import { VotingComponent } from './voting/voting.component';
+import { RewardsComponent } from './rewards/rewards.component';
+import { CreateProposalsComponent } from './create-proposals/create-proposals.component';
+import { VoteSubmittedComponent } from './vote-submitted/vote-submitted.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { GiveRankingComponent } from './give-ranking/give-ranking.component';
     HeaderComponent,
     VotingDashboardComponent,
     ValuesRankingComponent,
-    GiveRankingComponent
+    GiveRankingComponent,
+    ProposalsComponent,
+    VotingComponent,
+    RewardsComponent,
+    CreateProposalsComponent,
+    VoteSubmittedComponent
   ],
   imports: [
     BrowserModule,

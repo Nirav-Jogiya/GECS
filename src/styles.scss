@@ -8,6 +8,13 @@ body {
   max-width: 1366px;
 }
 
+#particle-canvas {
+  width: 100%;
+  height: 100% !important;
+  position: absolute !important;
+  z-index: -1;
+}
+
 h1,
 h2 {
   font-size: 35px;
@@ -53,6 +60,11 @@ p {
   width: 40%;
 }
 
+button:focus {
+  border: none;
+  outline: none;
+}
+
 .btn_custom {
   font-size: 20px;
   padding: 8px 10px;
@@ -67,6 +79,27 @@ p {
     padding: 5px 0;
     width: 180px;
     margin: 0 20px;
+  }
+
+  &.small {
+    padding: 5px 0;
+    width: 150px;
+  }
+}
+
+table {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  tr {
+    td,
+    th {
+      padding: 5px 20px;
+    }
   }
 }
 
@@ -134,6 +167,25 @@ nav {
     &:last-child {
       border-bottom: none;
       margin-bottom: 0;
+    }
+  }
+}
+
+.radio_group {
+  color: #fff;
+  font-size: 25px;
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+
+  label {
+    margin-right: 60px;
+    @media screen and (max-width: 991px) {
+      margin-right: 20px;
     }
   }
 }
