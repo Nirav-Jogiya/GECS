@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScriptService } from '../_services/script.service'
 
 @Component({
   selector: 'app-index',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _script:ScriptService) { }
 
   ngOnInit(): void {
+  }
+
+  ShowHeader(){
+    this._script.showHeaders()
   }
 
 }
