@@ -11,7 +11,8 @@ import { ProposalsComponent } from './proposals/proposals.component';
 import { VotingComponent } from './voting/voting.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { CreateProposalsComponent } from './create-proposals/create-proposals.component';
-import { VoteSubmittedComponent } from './vote-submitted/vote-submitted.component';
+import { ProposalsHistoryComponent } from './proposals-history/proposals-history.component';
+import { SubmittedComponent } from './submitted/submitted.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -21,10 +22,11 @@ const routes: Routes = [
   { path: 'values-ranking', component: ValuesRankingComponent },
   { path: 'give-ranking', component: GiveRankingComponent },
   { path: 'proposals', component: ProposalsComponent },
+  { path: 'proposal-history', component: ProposalsHistoryComponent },
   { path: 'voting', component: VotingComponent },
   { path: 'rewards', component: RewardsComponent },
-  { path: 'create-proposals', component: CreateProposalsComponent },
-  { path: 'vote-submitted', component: VoteSubmittedComponent  },
+  { path: 'create-proposal', component: CreateProposalsComponent },
+  { path: 'submitted', component: SubmittedComponent },
 
 ];
 

@@ -14,6 +14,10 @@ import { VotingComponent } from './voting/voting.component';
 import { RewardsComponent } from './rewards/rewards.component';
 import { CreateProposalsComponent } from './create-proposals/create-proposals.component';
 import { VoteSubmittedComponent } from './vote-submitted/vote-submitted.component';
+import { ProposalsHistoryComponent } from './proposals-history/proposals-history.component';
+import { SubmittedComponent } from './submitted/submitted.component';
+
+import { ParticlesDirective} from './particles.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,10 @@ import { VoteSubmittedComponent } from './vote-submitted/vote-submitted.componen
     VotingComponent,
     RewardsComponent,
     CreateProposalsComponent,
-    VoteSubmittedComponent
+    VoteSubmittedComponent,
+    ProposalsHistoryComponent,
+    SubmittedComponent,
+    ParticlesDirective
   ],
   imports: [
     BrowserModule,

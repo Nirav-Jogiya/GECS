@@ -8,7 +8,7 @@ body {
   max-width: 1366px;
 }
 
-#particle-canvas {
+.particle_bg {
   width: 100%;
   height: 100% !important;
   position: absolute !important;
@@ -41,6 +41,12 @@ p {
   font-size: 22px;
 }
 
+@media screen and (max-width: 991px) {
+  br {
+    display: none;
+  }
+}
+
 .fs_25 {
   font-size: 25px;
   @media screen and (max-width: 991px) {
@@ -50,10 +56,18 @@ p {
 
 .fs_30 {
   font-size: 30px;
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+  }
 }
 
 .mw_500 {
   max-width: 500px;
+}
+
+.mw_1000 {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .w_40 {
@@ -87,6 +101,29 @@ button:focus {
   }
 }
 
+.form-group {
+  text-align: left;
+
+  label {
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+    }
+  }
+
+  .form-control {
+    margin-bottom: 40px;
+    height: 45px;
+    @include border-radius(0);
+    @media screen and (max-width: 991px) {
+      margin-bottom: 20px;
+      height: 35px;
+    }
+  }
+}
+
 table {
   width: 100%;
   color: #fff;
@@ -114,8 +151,13 @@ nav {
     .navbar-nav {
       .nav-item {
         .nav-link {
-          font-size: 20px;
+          font-size: 22px;
           margin-right: 30px;
+          @media screen and (max-width: 991px) {
+            font-size: 18px;
+            margin-right: 0;
+          }
+
         }
       }
     }
@@ -157,12 +199,16 @@ nav {
   a {
     color: #fff;
     font-size: 30px;
+    font-size: 30px;
     font-weight: bold;
     border-bottom: 1px solid #888;
     padding-bottom: 5px;
     margin-bottom: 5px;
     text-decoration: none;
     display: block;
+    @media screen and (max-width: 991px) {
+      font-size: 22px;
+    }
 
     &:last-child {
       border-bottom: none;

@@ -8,6 +8,6 @@ import { ScriptService } from './_services/script.service'
 })
 export class AppComponent {
   title = 'GECS';
-
   constructor(public _script:ScriptService){}
+  number: number = 150;
 }
