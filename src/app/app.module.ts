@@ -18,6 +18,8 @@ import { ProposalsHistoryComponent } from './proposals-history/proposals-history
 import { SubmittedComponent } from './submitted/submitted.component';
 
 import { ParticlesDirective} from './particles.directive';
+import { ProposalHistoryViewComponent } from './proposal-history-view/proposal-history-view.component';
+import { ProposalViewComponent } from './proposal-view/proposal-view.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ParticlesDirective} from './particles.directive';
     VoteSubmittedComponent,
     ProposalsHistoryComponent,
     SubmittedComponent,
-    ParticlesDirective
+    ParticlesDirective,
+    ProposalHistoryViewComponent,
+    ProposalViewComponent
   ],
   imports: [
     BrowserModule,
