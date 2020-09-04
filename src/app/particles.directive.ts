@@ -36,8 +36,8 @@ export class ParticlesDirective implements OnDestroy, OnInit {
   @Input() linkDistance: number = 140;
   @Input() size: number = 3;
   @Input() repulseDistance: number = 140;
-  @Input() particleHex: string = "#888";
-  @Input() linkHex: string = "#aaa";
+  @Input() particleHex: string = "#666";
+  @Input() linkHex: string = "#666";
   @Input() bounce: boolean = true;
   @Input() densityArea: number = 800;
 
