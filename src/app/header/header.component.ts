@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScriptService } from "../_services/script.service"
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _script:ScriptService) { }
 
   ngOnInit(): void {
   }
-
+  ClearHeads(){    
+    this._script.clearHeader()
+  }
 }

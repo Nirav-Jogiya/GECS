@@ -14,4 +14,12 @@ export class ScriptService {
     localStorage.setItem("Header",JSON.stringify(this.header))
     this.showHeader = JSON.parse(localStorage.getItem("Header"))
   }
+
+  clearHeader(){
+    console.log(JSON.parse(localStorage.getItem("Header")));
+    
+    this.header = false
+    this.showHeader = false
+    localStorage.removeItem("Header")
+  }
 }

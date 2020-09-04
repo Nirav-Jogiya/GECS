@@ -1,5 +1,5 @@
 
-<app-header></app-header>
+<app-header *ngIf="_script.showHeader"></app-header>
 <router-outlet>
     <div class="particle_bg">
         <canvas repulse-particles number={{number}}></canvas>
