@@ -15,6 +15,7 @@ import { ProposalsHistoryComponent } from './proposals-history/proposals-history
 import { SubmittedComponent } from './submitted/submitted.component';
 import { ProposalViewComponent } from './proposal-view/proposal-view.component';
 import { ProposalHistoryViewComponent } from './proposal-history-view/proposal-history-view.component';
+import { WalletComponent } from './wallet/wallet.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'rewards', component: RewardsComponent },
   { path: 'create-proposal', component: CreateProposalsComponent },
   { path: 'submitted', component: SubmittedComponent },
+  { path: 'wallet', component: WalletComponent },
 
 ];
 

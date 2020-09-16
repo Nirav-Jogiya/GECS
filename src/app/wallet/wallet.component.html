@@ -1,0 +1,24 @@
+<div class="container text-center">
+    <div class="text-center mt-5 text_white">
+        <h3>Wallet Connect</h3>
+        <p class="float-left">connected to <br> {{_script.activechain}}</p>
+        <p class="float-right">{{_script.address}} <br><button class="btn text_white" (click)="killSession()">Disconnect</button></p>
+    </div>
+    <div class="text_white" style="margin-top: 7%;">
+        <h3>Balances</h3>
+    </div>
+    <table class="table text_white">
+        <thead>
+          <tr>
+            <th scope="col">Currency</th>
+            <th scope="col">Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{_script.tokenName}}</td>
+            <td>{{_script.balance}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

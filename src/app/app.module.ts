@@ -20,6 +20,7 @@ import { SubmittedComponent } from './submitted/submitted.component';
 import { ParticlesDirective} from './particles.directive';
 import { ProposalHistoryViewComponent } from './proposal-history-view/proposal-history-view.component';
 import { ProposalViewComponent } from './proposal-view/proposal-view.component';
+import { WalletComponent } from './wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProposalViewComponent } from './proposal-view/proposal-view.component';
     SubmittedComponent,
     ParticlesDirective,
     ProposalHistoryViewComponent,
-    ProposalViewComponent
+    ProposalViewComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,
